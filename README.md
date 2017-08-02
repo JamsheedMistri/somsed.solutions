@@ -8,7 +8,7 @@ Spell "Somsed" backwards, and add a ".com" to the end. We attempted to create a 
 
 
   - The calculate function takes an input, such as "(x*2)" , "5"
-    It returns the solution, so in this case, it is 10
+    It returns the solution, so in this case, it is 10 
   - The function works in rounds, where each round selects the rightmost opening
     parentheses because that will always be the innermost set of parentheses. 
   - If there is a special function (sin, cos, tan, etc...) calculate sets a flag 
