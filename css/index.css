@@ -1,0 +1,397 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Inconsolata";
+  background-color: #F5F3F5;
+}
+
+nav {
+  background-color: #2978A0;
+  padding: 10px;
+  color: #F5F3F5;
+  box-shadow: 0 0 20px 1px gray;
+  text-align: center;
+}
+
+nav img {
+  height: 40px;
+}
+
+#inputbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  box-shadow: 0 0 20px 1px gray;
+}
+
+.func-button {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5em;
+  width: calc(100% / 4);
+  color: white;
+  background-color: #2978A0;
+  padding: 10px 0;
+  border-right: 1px solid white;
+  margin-right: -8px;
+}
+
+.func-button:hover {
+  cursor: pointer;
+  background-color: #406E8E;
+}
+
+input {
+  display: inline-block;
+  padding: 20px 15px;
+  font-size: 1.5em;
+  color: black;
+  border: none;
+  background: transparent;
+  width: 60%;
+}
+
+input:focus {
+  outline: none;
+}
+
+#domain-min {
+  position: fixed;
+  right: 0;
+  margin-right: calc(90vw + 0.5em);
+  margin-top: calc(35vh - 0.5em);
+  font-size: 1em;
+}
+
+#domain-max {
+  position: fixed;
+  margin-left: calc(90vw + 0.5em);
+  margin-top: calc(35vh - 0.5em);
+  font-size: 1em;
+}
+
+#range-min {
+  position: fixed;
+  margin-top: calc(65vh + 0.5em);
+  margin-left: calc(50vw - 1em);
+  font-size: 1em;
+}
+
+#range-max {
+  position: fixed;
+  margin-top: calc(5vh - 1.5em);
+  margin-left: calc(50vw - 1em);  
+  font-size: 1em;
+}
+
+#x-increment {
+  position: fixed;
+  margin-top: calc(5vh - 1.5em);
+  right: 0;
+  margin-right: 70vw;
+}
+
+#y-increment {
+  position: fixed;
+  margin-top: calc(5vh - 1.5em);
+  margin-left: 70vw;
+}
+
+#canvas {
+  width: 80vw;
+  height: 60vh;
+  margin-left:10vw;
+  margin-top:5vh;
+}
+
+#window-settings {
+  width: calc(5vw - 20px);
+  height: calc((5vw - 20px) * 3);
+  margin-top: calc(((100vh - (6* (5vw - 20px))) / 2) - 5vh);
+  position: fixed;
+  background-color: transparent;
+  border: 2px solid #2978A0;
+  border-left: none;
+  text-align: center;
+}
+
+#plus-button {
+  width: 100%;
+  height: calc(5vw - 20px);
+  font-size: 2em;
+  line-height: calc(5vw - 20px);
+  border-bottom: 1px solid #2978A0;
+}
+
+#plus-button:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+#home-button {
+  width: 100%;
+  height: calc(5vw - 20px);
+  font-size: 1em;
+  line-height: calc(5vw - 20px);
+  border-top: 1px solid #2978A0;
+  border-bottom: 1px solid #2978A0;
+}
+
+#home-button:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+#minus-button {
+  width: 100%;
+  height: calc(5vw - 20px);
+  font-size: 2em;
+  line-height: calc(5vw - 20px);
+  border-top: 1px solid #2978A0;
+}
+
+#minus-button:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.setting {
+  text-align: center;
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 1em;
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+#inp {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+#matrixpop {
+  display: none;
+  margin: 5vw;
+}
+
+#matrixinput {
+  width: calc(50% - 2px - 2.5vw);
+  height: 100%;
+  float: left;
+  text-align: center;
+  margin-right: 2.5vw;
+}
+
+#matrixoutput {
+  width: calc(50% - 2px - 2.5vw);
+  height: 100%;
+  float: left;
+  text-align: center;
+  margin-left: 2.5vw;
+}
+
+#matrixpop table {
+  width: 100%;
+}
+
+#matrixpop td {
+  width: 10% !important;
+  border: 1px solid black;
+  padding: 5px 0;
+  font-size: 1em;
+  font-family: arial;
+}
+
+#tableformatrixinput {
+  margin-top: 3px;
+}
+
+#matrixpop input {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1em;
+  text-align: center;
+}
+
+.outputnumber {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1em;
+  text-align: center;
+}
+
+#matrixrows {
+  border: 1px solid gray !important;
+  width: 3em !important;
+  font-size: 1em !important;
+  padding: 5px !important;
+  text-align: center !important;
+}
+
+#graph-window {
+  display: none;
+}
+
+#error {
+  width: 100%;
+  display: block;
+}
+
+#exclamation {
+  padding: 5px;
+  height: calc(100% - 10px);
+  background-color: red;
+  color: white;
+  display: inline-block;
+}
+
+#error-message {
+  display: inline-block;
+}
+
+#solve {
+  display: none;
+  padding: 5vw;
+}
+
+#welcome {
+  padding: 15vh 10vw;
+  text-align: center;
+}
+
+#welcome img {
+  width: 40vw;
+}
+
+#stat {
+  padding: 5vw;
+  display: none;
+}
+
+#coords-container {
+  width: calc(50% - 1px);
+  text-align: center;
+  border-right: 1px solid black;
+  text-size: 1em;
+  float: left;
+}
+
+#coordinates input {
+  border-bottom: 1px solid gray;
+  display: inline-block;
+  width: 30px;
+  text-size: 1em;
+  padding: 5px;
+  text-align: center;
+}
+
+#coordinates #statistic-add-coordinate {
+  background-color: #2978A0;
+  padding: 7px 15px;
+  color: white;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+#coordinates #statistic-add-coordinate:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+#coord-input {
+  height: 40vh;
+  overflow-y: scroll;
+  font-size: 1.5em;
+}
+
+.statistic-coordinate {
+  display: block;
+}
+
+#regress-container {
+  width: calc(50% - 1px);
+  text-align: center;
+  float: left;
+}
+
+#regress-button {
+  background-color: #2978A0;
+  padding: 7px 15px;
+  color: white;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+
+#regress-button:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+#regress-container h2 {
+  text-decoration: underline;
+}
+
+#regress-container h3 {
+  margin: 0;
+}
+
+#regress-graph-button {
+  background-color: #2978A0;
+  padding: 7px 15px;
+  color: white;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+
+#regress-graph-button:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+#solve-go {
+  background-color: #2978A0;
+  padding: 7px 15px;
+  color: white;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+
+#solve-go:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+#regress-answer-container {
+  display: none;
+}
+
+#polynomial-degree {
+  display: inline-block;
+  border-bottom: 1px solid gray;
+  width: 30px;
+  padding: 3px;
+  text-align: center;
+  visibility: hidden;
+}
+
+#solve-answer {
+  font-weight: 300;
+}

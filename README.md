@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/RsUR12v.png" style="margin: 0 auto" />
+
 ### What is it?
 Spell "Somsed" backwards, and add a ".com" to the end. We attempted to create a copy of Desmos, one of the best online graphing calculators, for our Algebra II Honors final project. We had over 2,500 lines of code, mainly in JavaScript. We broke down the fundamentals of a graphing calculator, and wrote everything from scratch. Unlike Desmos, though, we also have row-reduced echelon form matrix solving as well as lienar regression tools for polynomial regressions, exponential regressions, logarithmic regressions, and power regressions. Somsed can be accessed at [somsed.solutions](https://somsed.solutions), and is very simple to understand. Click the mode you want to use, and follow the instructions! For graphing, don't include the `y =` at the beginning of the statement, and input your equation (involving `x`) in the bar at the bottom.
 
