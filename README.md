@@ -63,7 +63,7 @@ Spell "Somsed" backwards, and add a ".com" to the end. We attempted to create a 
   0     /                   \
     1 2 3 4 5 6 7 8 9 10 11 12
     
-    `````
+`````
     
 - If we look at the differences of the equations at x = 6, it is 2. At x = 8, 
   the difference is -3. Because there is a sign change, we know there is an 
