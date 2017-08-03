@@ -7,21 +7,13 @@ Spell "Somsed" backwards, and add a ".com" to the end. We attempted to create a 
 ###### Graphing
 
 
-  - The calculate function takes an input, such as "(x*2)" , "5"
-    It returns the solution, so in this case, it is 10 
-  - The function works in rounds, where each round selects the rightmost opening
-    parentheses because that will always be the innermost set of parentheses. 
-  - If there is a special function (sin, cos, tan, etc...) calculate sets a flag 
-    before solving the parentheses.
-  - It runs a Exponent function that scans through the equation and solves any 
-    exponents
-  - It runs a Multiplication/Division function that scans through the equation
-    and solves any * or /
-  - It runs a Addition/Subtraction function that scans throught the remaining 
-    equation and solves for + or -
-  - Once the selected section has been solved, it checks if any flags were set
-    for special functions. It performs the special function over the selected 
-    section, and then replaces the original section with the solved version. 
+  - The calculate function takes an input, such as `(x*2)` , `5`. It returns the solution, so in this case, it is 10.
+  - The function works in rounds, where each round selects the rightmost opening parentheses because that will always be the innermost set of parentheses. 
+  - If there is a special function (sin, cos, tan, etc...) calculate sets a flag before solving the parentheses.
+  - It runs an exponent function that scans through the equation and solves any exponents.
+  - It runs a multiplication/division function that scans through the equation and solves any `*`s or `/`s.
+  - It runs an addition/subtraction function that scans throught the remaining equation and solves for `+`s or `-`s.
+  - Once the selected section has been solved, it checks if any flags were set for special functions. It performs the special function over the selected section, and then replaces the original section with the solved version. 
   - The function repeats these steps until there are no more parentheses left.     
  
   Example:
@@ -43,13 +35,8 @@ Spell "Somsed" backwards, and add a ".com" to the end. We attempted to create a 
 
 ###### Solving
 
-- Solve equations takes in the number of equation 1, the number of equation 2,
-  the latex of equation 1, the latex of equation 2, and the xScale
- It outputs the points of intersection of the two equations.
-
--  To calculate the interesection of graphs, we first look at the differences of 
-  the previous column of points, and the current column of points. If the differences
-  change signs, there is an intersection.
+- Solve equations takes in the number of equation 1, the number of equation 2, the latex of equation 1, the latex of equation 2, and the `xScale`. It outputs the points of intersection of the two equations.
+-  To calculate the interesection of graphs, we first look at the differences of the previous column of points, and the current column of points. If the differences change signs, there is an intersection.
   
   For the graph:
   
@@ -65,11 +52,8 @@ Spell "Somsed" backwards, and add a ".com" to the end. We attempted to create a 
     
 `````
     
-- If we look at the differences of the equations at x = 6, it is 2. At x = 8, 
-  the difference is -3. Because there is a sign change, we know there is an 
-  intersection.
--  By doing this check in very small increments, we are able to approximate the solutions
-  of two equations. 
+- If we look at the differences of the equations at `x = 6`, it is 2. At `x = 8`, the difference is -3. Because there is a sign change, we know there is an intersection.
+-  By doing this check in very small increments, we are able to approximate the solutions of two equations. 
 
 ###### Matrix Diagonalization
 A detailed description of the process used to diagonalize matricies.
